@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Job Application</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<h1 id="title" class="title">Job Application</h1>
+	<p id="description">Please fill out this form with the required information</p>
+	<form method="post" action="https://example.test" id="survey-form">
+	
+		<!--personal info section -->
+		<fieldset>
+			<legend> Personal Info </legend>
+			<label id="name-label" for="name">Enter Your First Name: <input type="text" id="name" class="style1" name="name" placeholder="Ichigo" required /></label>
+			<label id="name2-label" for="name2">Enter Your Last Name: <input type="text" id="name2" class="style1" name="name2" placeholder="Kurosaki" required /></label>
+			<label id="number-label" for="age">Enter Your Age (years): <input type="number" class="style1" id="number" name="age" placeholder="15" min="16" max="120" required /></label>
+			<label id="email-label" for="email">Enter Your Email: <input type="email" id="email" class="style1" name="email" placeholder="tensa_zangetsu@bankai.lol" required /></label>
+			<label id="phone-label" for="phone">Enter Your Phone: <input type="tel" id="phone" class="style1" name="phone" placeholder="0000000000" required /></label>
+		</fieldset>
+	
+		<!--job choice section -->
+		<fieldset>
+			<legend>Job & location of choice</legend>
+			<section>
+				<label><input type="radio" class="inline" name="job-role" value="technical_support" /> Technical Support</label>
+				<label><input type="radio" class="inline" name="job-role"  value="junior_cybersecurity_analyst" /> Junior Cybersecurity Analyst </label>
+				<label><input type="radio" class="inline" name="job-role" value="senior_web_dev" /> Senior Web Dev</label>
+				<label><input type="radio" class="inline" name="job-role" value="ghoul_investigator" checked /> Ghoul Investigator</label>
+				<label><input type="radio" class="inline" name="job-role" value="substitute_shinigami" /> Substitute Shinigami</label>
+				<label><input type="radio" class="inline" name="job-role" value="volleyball_libero" /> Volleyball Libero</label>
+			</section>
+			<section>
+				<label>Location 1
+					<select id="dropdown" class="style1">
+						<option value="">(select one)</option>
+	            		<option value="1">Al Qanatir Al Khayriyyah</option>
+	            		<option value="2">Cairo</option>
+	            		<option value="3">El Mazarita</option>
+	            		<option value="4">Other</option>
+					</select>
+				</label>
+				<label>Location 2
+					<select id="dropdown2" class="style1">
+						<option value="">(select one)</option>
+	            		<option value="1">Al Qanatir Al Khayriyyah</option>
+	            		<option value="2">Cairo</option>
+	            		<option value="3">El Mazarita</option>
+	            		<option value="4">Other</option>
+					</select>
+				</label>
+			</section>
+		</fieldset>
+
+		<!--resume and about info section -->
+		<fieldset>
+			<legend>Resume & Yourself</legend>
+			<section>
+				<label>Uplod your Resume: <input type="file" class="style1" required /></label>
+			</section>
+			<section>
+				<label>Tell us about yourself: 
+					<textarea class="style1" placeholder="'Mo daijoubu! Naze tte? Watashi ga kita!' -All Mightoo- "></textarea>
+				</label>
+			</section>
+		</fieldset>
+		<label for="terms-and-conditions">
+			<input type="checkbox" class="inline" name="terms-and-conditions" id="terms-and-conditions" value="no" /> I don't accept the <a href="https://cl1p.net/termssss">Terms and Conditions</a>
+		</label>
+		<label for="like">
+			<input type="checkbox" class="inline" name="like" id="like" value="yes"> Did you like the website....?
+		</label>
+		<input type="submit" id="submit" value="Submit" />
+	</form>
+
+	 <footer>
+        <div class="footer-content">
+            <p>Contact Us: <a href="mailto:info@example.com">info@example.com</a> | Phone: (123) 456-7890</p>
+            <div class="social-links">
+                <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a>
+            </div>
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
